@@ -1,0 +1,901 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Orient &#8212; Boltz</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part3/part3_3';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Existential" href="../../bibliography.html" />
+    <link rel="prev" title="Transformation" href="part3_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%28cropped1%29.jpg" class="logo__image only-light" alt="Boltz - Home"/>
+    <script>document.write(`<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%28cropped1%29.jpg" class="logo__image only-dark" alt="Boltz - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Tactical
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act1/part1.html">Informational</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter1.html">Referral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter2.html">Screening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter3.html">Eligibility</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act2/part2.html">Strategic</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter1.html">Principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter2.html">Agent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter3.html">Risk</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../part3.html">Operational</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act1.html">Literature 🌊</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_1.html">Cosmic</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_2.html">Uncertainty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_3.html">Failure</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act2.html">Personalize ⚓️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_1.html">Base</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_2.html">Risk</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_3.html">Student ☔️</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../act3.html">Update 🧭</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="part3_1.html">Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part3_2.html">Transformation</a></li>
+
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Feedback</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bibliography.html">Existential</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act3/part3/part3_3.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/act3/part3/part3_3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Orient</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#music">Music</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#process-quality-monitoring-and-conflict-of-interest">Process Quality, Monitoring, and Conflict of Interest</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sensing-seizing-and-transforming-dynamic-capabilities-in-action">Sensing, Seizing, and Transforming: Dynamic Capabilities in Action</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-combinatorial-search-space-generativity-and-transformation">The Combinatorial Search Space: Generativity and Transformation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#who-is-to-judge">Who Is to Judge?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-privilege-transformation-and-the-expansive-search-space">Conclusion: Privilege, Transformation, and the Expansive Search Space</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capital">Capital</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agency-problem-in-capitalism-authority-fragmentation-and-generativity">The Agency Problem in Capitalism: Authority, Fragmentation, and Generativity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agency-and-fragmentation-the-monarchy-of-the-market">Agency and Fragmentation: The Monarchy of the Market</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oligarchic-networks-and-iterative-authority">Oligarchic Networks and Iterative Authority</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-anarchy-of-markets-and-generative-chaos">The Anarchy of Markets and Generative Chaos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#toward-a-networked-process-one-god-or-many">Toward a Networked Process: One God or Many?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-agency-as-generativity">Conclusion: Agency as Generativity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue">Epilogue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#capital-gains-as-the-principal-the-god-of-capitalism"><strong>Capital Gains as the Principal: The “God” of Capitalism</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-oligarchic-role-of-the-ceo-enforcer-or-visionary"><strong>The Oligarchic Role of the CEO: Enforcer or Visionary?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contests-and-the-anarchic-layer-beyond-capital-gains"><strong>Contests and the Anarchic Layer: Beyond Capital Gains</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#capital-gains-monotheism-or-polytheism"><strong>Capital Gains: Monotheism or Polytheism?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-generativity-vs-optimization"><strong>Conclusion: Generativity vs. Optimization</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#games">Games</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chess-an-engine-of-simulated-certainty">Chess: An Engine of Simulated Certainty</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-world-agency-problems-the-fog-of-generativity">Real-World Agency Problems: The Fog of Generativity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poker-and-imperfect-information">Poker and Imperfect Information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gambling-on-horses-the-red-queen-hypothesis-in-action">Gambling on Horses: The Red Queen Hypothesis in Action</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#roulette-the-purity-of-chance">Roulette: The Purity of Chance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critiquing-the-games-the-inadequacy-of-perfect-models">Critiquing the Games: The Inadequacy of Perfect Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#toward-a-generative-framework">Toward a Generative Framework</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="orient">
+<h1>Orient<a class="headerlink" href="#orient" title="Permalink to this heading">#</a></h1>
+<section id="music">
+<h2>Music<a class="headerlink" href="#music" title="Permalink to this heading">#</a></h2>
+<p>To truly impress your family trio—each with expertise in agency theory, dynamic capabilities, and process quality—we must explore the <em>Bernstein-Gould saga</em> through these sophisticated lenses, revealing its profound implications for decision-making, transformation, and generative creativity.</p>
+<section id="process-quality-monitoring-and-conflict-of-interest">
+<h3>Process Quality, Monitoring, and Conflict of Interest<a class="headerlink" href="#process-quality-monitoring-and-conflict-of-interest" title="Permalink to this heading">#</a></h3>
+<p>In agency theory, monitoring ensures that the agent (here, Bernstein or Gould, depending on perspective) acts in alignment with the principal’s goals (arguably, the score as intended by Brahms). However, the very nature of music challenges the notion of a singular “principal.” Who or what holds the ultimate <a class="reference external" href="https://en.wikipedia.org/wiki/Perspectivism#Nietzsche">authority</a>: the composer, the maestro, the soloist, or the audience? This ambiguity complicates process quality.</p>
+<blockquote>
+<div><p><em>Monarchy? Oligarchy? Anarchy?</em><br />
+– Yours Truly</p>
+</div></blockquote>
+<p>Bernstein’s public disclaimer can be seen as an act of <em>monitoring transparency</em>. By openly addressing his disagreement with Gould’s tempo, he acknowledged a potential conflict of interest: his duty to uphold his interpretation of Brahms versus his obligation to facilitate Gould’s artistry. Yet this conflict, instead of diminishing process quality, elevated it. Bernstein transformed the performance into a meta-commentary on artistic freedom and interpretative multiplicity, ensuring an experience that transcended the technicalities of tempo.</p>
+<p>Digitization could ostensibly resolve such conflicts by enforcing a standard—perhaps through a metronome or AI-driven interpretative model—but this would flatten the very human tensions that define classical music. Process quality in this context is not merely about error minimization; it is about fostering an environment where divergent visions can coexist and challenge each other, yielding generative outcomes.</p>
+</section>
+<section id="sensing-seizing-and-transforming-dynamic-capabilities-in-action">
+<h3>Sensing, Seizing, and Transforming: Dynamic Capabilities in Action<a class="headerlink" href="#sensing-seizing-and-transforming-dynamic-capabilities-in-action" title="Permalink to this heading">#</a></h3>
+<p>Bernstein’s response exemplifies dynamic capabilities: his ability to sense an extraordinary interpretative divergence, seize the opportunity to contextualize it for the audience, and transform the performance into something unprecedented.</p>
+<ul class="simple">
+<li><p><strong>Sensing</strong>: Bernstein recognized that Gould’s unconventional tempo was not just a personal quirk but a radical reimagining of Brahms, demanding acknowledgment.</p></li>
+<li><p><strong>Seizing</strong>: By addressing the audience, Bernstein reframed the performance as an experiment in interpretative freedom, shifting the focus from technical execution to philosophical inquiry.</p></li>
+<li><p><strong>Transforming</strong>: The performance became more than a rendition of Brahms; it evolved into a living dialogue about the nature of artistry, agency, and collaboration.</p></li>
+</ul>
+<p>This dynamic interplay between sensing, seizing, and transforming illustrates how the Bernstein-Gould moment was not a failure of process but a testament to the adaptive potential of human creativity.</p>
+</section>
+<section id="the-combinatorial-search-space-generativity-and-transformation">
+<h3>The Combinatorial Search Space: Generativity and Transformation<a class="headerlink" href="#the-combinatorial-search-space-generativity-and-transformation" title="Permalink to this heading">#</a></h3>
+<p>The interaction between composer, conductor, performer, and audience unfolds in a massive combinatorial search space, where each decision opens new pathways. Brahms’ score provides a structured foundation, but the generative potential emerges from the agents’ interpretative choices:</p>
+<ol class="arabic simple">
+<li><p><strong>Composer</strong>: Brahms creates a framework rich in possibilities.</p></li>
+<li><p><strong>Maestro</strong>: Bernstein navigates the dual role of authority and facilitator.</p></li>
+<li><p><strong>Performer</strong>: Gould introduces a disruptive element, challenging norms.</p></li>
+<li><p><strong>Audience</strong>: Observers complete the circuit, interpreting the performance through their own experiential and cultural lenses.</p></li>
+</ol>
+<p>The generative capacity of this search space lies in its interactivity. Each agent influences the others, creating emergent phenomena that cannot be reduced to the sum of their parts. The Bernstein-Gould saga exemplifies this dynamic, where tension and divergence yield a transformational experience.</p>
+</section>
+<section id="who-is-to-judge">
+<h3>Who Is to Judge?<a class="headerlink" href="#who-is-to-judge" title="Permalink to this heading">#</a></h3>
+<p>In such a complex system, judgment becomes inherently subjective. Process quality cannot be measured solely by adherence to a standard (e.g., tempo fidelity) but must account for the richness of the experience. Bernstein and Gould’s interpretative conflict invites us to reconsider the metrics by which we evaluate artistry. Should we prioritize precision or risk-taking? Consensus or innovation?</p>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Archimedes_lever.png" /></p>
+<p>Perhaps the most compelling answer lies in the audience’s privilege: to witness not perfection, but the human drama of creation. This aligns with the ethos of agency theory, which values the agent’s autonomy and capacity for innovation, and with dynamic capabilities, which emphasize the transformative potential of adaptive systems.</p>
+</section>
+<section id="conclusion-privilege-transformation-and-the-expansive-search-space">
+<h3>Conclusion: Privilege, Transformation, and the Expansive Search Space<a class="headerlink" href="#conclusion-privilege-transformation-and-the-expansive-search-space" title="Permalink to this heading">#</a></h3>
+<p>The Bernstein-Gould saga is not merely a tale of artistic disagreement but a case study in the interplay between agency, process quality, and dynamic capabilities. It highlights the privilege of witnessing the creative process in its raw, unscripted form—a privilege that digitization, for all its efficiencies, could never replicate. The combinatorial search space of classical music remains vast and untamed, a domain where protagonists continually sense, seize, and transform the moment into something generative and unrepeatable.</p>
+<p>Who is to judge? Perhaps no one. Or perhaps everyone—composer, maestro, performer, and audience alike—is both agent and principal in this expansive system, co-creating meaning in ways that defy optimization but celebrate humanity.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># Define the neural network structure; modified to align with &quot;Aprés Moi, Le Déluge&quot; (i.e. Je suis AlexNet)</span>
+<span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;World&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Birds, Song &amp; Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Materials on Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Particles &amp; Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Harmonic Series&#39;</span><span class="p">,</span> <span class="s1">&#39;Equal Temperament&#39;</span><span class="p">,</span> <span class="s1">&#39;Cadences &amp; Patterns&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Surveillance, Imagination&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Surprise &amp; Resolution&#39;</span><span class="p">,</span> <span class="s1">&#39;Genre &amp; Expectation&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Individual Melody&#39;</span><span class="p">,</span> <span class="s1">&#39;Rhythm &amp; Pocket&#39;</span><span class="p">,</span> <span class="s1">&#39;Chords, One Accord&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Solo Performance&#39;</span><span class="p">,</span> <span class="s1">&#39;Theme &amp; Variation&#39;</span><span class="p">,</span> <span class="s1">&#39;Maestro or Conductor&#39;</span><span class="p">,</span> <span class="s1">&#39;Call &amp; Answer&#39;</span><span class="p">,</span> <span class="s1">&#39;Military Cadence&#39;</span><span class="p">]</span>
+    <span class="p">}</span>
+
+<span class="c1"># Assign colors to nodes</span>
+<span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Surveillance, Imagination&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span> <span class="s1">&#39;Cadences &amp; Patterns&#39;</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span> <span class="s1">&#39;Equal Temperament&#39;</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Agency&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Genre &amp; Expectation&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Chords, One Accord&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Rhythm &amp; Pocket&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Individual Melody&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Military Cadence&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Call &amp; Answer&#39;</span><span class="p">,</span> <span class="s1">&#39;Maestro or Conductor&#39;</span><span class="p">,</span> <span class="s1">&#39;Theme &amp; Variation&#39;</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Solo Performance&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
+    <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Default color</span>
+
+<span class="c1"># Calculate positions for nodes</span>
+<span class="k">def</span> <span class="nf">calculate_positions</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="n">center_x</span><span class="p">,</span> <span class="n">offset</span><span class="p">):</span>
+    <span class="n">layer_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">start_y</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">layer_size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>  <span class="c1"># Center the layer vertically</span>
+    <span class="k">return</span> <span class="p">[(</span><span class="n">center_x</span> <span class="o">+</span> <span class="n">offset</span><span class="p">,</span> <span class="n">start_y</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">layer_size</span><span class="p">)]</span>
+
+<span class="c1"># Create and visualize the neural network graph</span>
+<span class="k">def</span> <span class="nf">visualize_nn</span><span class="p">():</span>
+    <span class="n">layers</span> <span class="o">=</span> <span class="n">define_layers</span><span class="p">()</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">node_colors</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">center_x</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Align nodes horizontally</span>
+
+    <span class="c1"># Add nodes and assign positions</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">nodes</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">y_positions</span> <span class="o">=</span> <span class="n">calculate_positions</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">center_x</span><span class="p">,</span> <span class="n">offset</span><span class="o">=-</span><span class="nb">len</span><span class="p">(</span><span class="n">layers</span><span class="p">)</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">y_positions</span><span class="p">):</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">pos</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="n">position</span>
+            <span class="n">node_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">))</span>
+
+    <span class="c1"># Add edges (without weights)</span>
+    <span class="k">for</span> <span class="n">layer_pair</span> <span class="ow">in</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;Perception&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Perception&#39;</span><span class="p">,</span> <span class="s1">&#39;Agency&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Agency&#39;</span><span class="p">,</span> <span class="s1">&#39;Generativity&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Generativity&#39;</span><span class="p">,</span> <span class="s1">&#39;Physicality&#39;</span><span class="p">)</span>
+    <span class="p">]:</span>
+        <span class="n">source_layer</span><span class="p">,</span> <span class="n">target_layer</span> <span class="o">=</span> <span class="n">layer_pair</span>
+        <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">source_layer</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">target_layer</span><span class="p">]:</span>
+                <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+
+    <span class="c1"># Draw the graph</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span>
+        <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span>
+        <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.1&quot;</span>
+    <span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Process Quality &amp; The Life-Sustaining Flow of Information</span><span class="se">\n</span><span class="s2"> From Composer vs. Maestro vs. Performer </span><span class="se">\n</span><span class="s2"> To Intelligent Audience&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Run the visualization</span>
+<span class="n">visualize_nn</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../../_images/24fa7848bb9667d62b04322eaadb0d89adf40a99aa4e2ec849d98a848c32d21f.png" src="../../_images/24fa7848bb9667d62b04322eaadb0d89adf40a99aa4e2ec849d98a848c32d21f.png" />
+</div>
+</div>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/blanche.png"><img alt="../../_images/blanche.png" src="../../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text"><em>Can We Agree On The Objective Function to Optimize?</em> The term refers to the great mathematician Archimedes, who supposedly claimed that he could lift the Earth off its foundation if he were given a place to stand, one solid point, and a long enough lever.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="capital">
+<h2>Capital<a class="headerlink" href="#capital" title="Permalink to this heading">#</a></h2>
+<section id="the-agency-problem-in-capitalism-authority-fragmentation-and-generativity">
+<h3>The Agency Problem in Capitalism: Authority, Fragmentation, and Generativity<a class="headerlink" href="#the-agency-problem-in-capitalism-authority-fragmentation-and-generativity" title="Permalink to this heading">#</a></h3>
+<p>At the heart of capitalism lies a paradox: it thrives on the autonomy and creativity of agents while simultaneously demanding alignment with principals’ goals to ensure efficiency and profit. This tension defines the agency problem, a persistent issue that reverberates through the mechanisms of governance, the fragmentation of labor, and the alienation that emerges in modern economic systems.</p>
+<p>The agency problem isn’t merely technical; it is philosophical. It wrestles with the competing claims of monarchy, oligarchy, and anarchy—three archetypes of authority that shape decision-making structures. These forms mirror the complexities of capitalism itself, where power is distributed unevenly across networks of influence, yet the ideal of a unified process remains elusive.</p>
+</section>
+<hr class="docutils" />
+<section id="agency-and-fragmentation-the-monarchy-of-the-market">
+<h3>Agency and Fragmentation: The Monarchy of the Market<a class="headerlink" href="#agency-and-fragmentation-the-monarchy-of-the-market" title="Permalink to this heading">#</a></h3>
+<p>In its most concentrated form, capitalism mirrors monarchy: a singular authority—a CEO, a founder, or an institutional investor—dictates the allocation of resources and the direction of labor. The principal, in this case, wields near-absolute control, expecting agents to align perfectly with their vision.</p>
+<p>This monarchic structure promises clarity and direction but suffers from inherent fragility. The isolation of authority creates blind spots, as the feedback loops essential for dynamic decision-making are stifled. The monarchy of the market often fragments when it encounters the scale and complexity of global trade, as the singular vision fails to accommodate the emergent needs of a vast, interdependent network.</p>
+<p>Yet this model persists, bolstered by myths of individual genius and the “invisible hand” of the market. The monarchic principal is elevated as an almost divine arbiter of efficiency, often at the expense of the agents whose labor sustains the system. Alienation, as Karl Marx astutely observed, becomes the inevitable outcome, as workers are estranged not only from the fruits of their labor but from their creative potential.</p>
+</section>
+<hr class="docutils" />
+<section id="oligarchic-networks-and-iterative-authority">
+<h3>Oligarchic Networks and Iterative Authority<a class="headerlink" href="#oligarchic-networks-and-iterative-authority" title="Permalink to this heading">#</a></h3>
+<p>If monarchy represents the ideal of centralized power, oligarchy reflects a distributed yet exclusive authority. In capitalism, this manifests as the dominance of corporate boards, financial consortia, and elite decision-making bodies. The agency problem here is one of limited iteration: while multiple principals share power, their interests often align to maintain systemic inequities rather than resolve them.</p>
+<p>This oligarchic fragmentation creates layers of disconnection between decision-makers and the broader network of agents. The “iterative” nature of oligarchy lies in its adaptive capacity—principals collaborate and negotiate, recalibrating strategies in response to shifting conditions. However, this adaptability is constrained by entrenched hierarchies and the pursuit of short-term gains over long-term transformation.</p>
+<p>In oligarchic capitalism, process quality becomes a battleground. Decisions are filtered through layers of bureaucracy and competing interests, often resulting in inefficiencies and diluted accountability. The very networks designed to foster collaboration devolve into mechanisms of self-preservation, prioritizing stability over innovation.</p>
+</section>
+<hr class="docutils" />
+<section id="the-anarchy-of-markets-and-generative-chaos">
+<h3>The Anarchy of Markets and Generative Chaos<a class="headerlink" href="#the-anarchy-of-markets-and-generative-chaos" title="Permalink to this heading">#</a></h3>
+<p>Anarchy, in the capitalist context, emerges when authority is diffused to the point of dissolution. The market, often romanticized as a self-regulating entity, epitomizes this anarchic ideal. Here, agency is theoretically maximized: each participant acts autonomously, contributing to the collective intelligence of the system.</p>
+<p>Yet this freedom is an illusion. The market’s generative chaos often masks deeper inequities, as systemic biases and power imbalances distort the flow of information and resources. The principal-agent relationship becomes an abstraction, as no singular authority governs the outcomes. Instead, agents are subsumed into a combinatorial search space, where their individual contributions are both essential and expendable.</p>
+<p>In this anarchic system, alienation takes on a new form: the individual is overwhelmed by the sheer scale and complexity of the market. The promise of agency dissolves into a generative, yet impersonal, process where innovation and exploitation coexist. Process quality, in this context, becomes a question of who defines the metrics—efficiency, creativity, or equity—and whose interests those metrics serve.</p>
+</section>
+<hr class="docutils" />
+<section id="toward-a-networked-process-one-god-or-many">
+<h3>Toward a Networked Process: One God or Many?<a class="headerlink" href="#toward-a-networked-process-one-god-or-many" title="Permalink to this heading">#</a></h3>
+<p>The Bernstein-Gould saga offers a microcosm of the agency problem in capitalism, refracted through the lens of artistic collaboration. It challenges us to reconsider the principal-agent relationship not as a hierarchy but as a networked process. In this model, authority is neither singular nor diffuse but distributed dynamically across roles: composer, conductor, performer, and audience.</p>
+<p>This networked approach aligns with the concept of perspectivism, where multiple viewpoints coexist without collapsing into a single narrative. Fragmentation is not a failure but a generative force, enabling innovation through tension and divergence. The agency problem, thus reframed, becomes an opportunity for transformation rather than a constraint on efficiency.</p>
+<p>The question of “one God or many” underscores the philosophical stakes of this shift. Should capitalism aspire to a unified process—a singular vision that harmonizes competing interests—or embrace the multiplicity of perspectives that define human creativity? The answer, perhaps, lies in acknowledging that the generative potential of capitalism, like that of music, emerges not from resolving tensions but from engaging with them.</p>
+</section>
+<hr class="docutils" />
+<section id="conclusion-agency-as-generativity">
+<h3>Conclusion: Agency as Generativity<a class="headerlink" href="#conclusion-agency-as-generativity" title="Permalink to this heading">#</a></h3>
+<p>Capitalism’s agency problem is, at its core, a reflection of the human condition: the struggle to balance autonomy and alignment, freedom and responsibility, fragmentation and unity. The monarchy, oligarchy, and anarchy of capitalism each offer partial solutions, but none fully resolves the tension.</p>
+<p>To move forward, we must embrace a networked perspective that values generativity over optimization. This means rethinking authority as a dynamic process, where principals and agents co-create meaning within a vast combinatorial search space. It means prioritizing process quality not as adherence to a standard but as the richness of human experience.</p>
+<p>In the end, the agency problem in capitalism is not a flaw to be corrected but a feature to be understood—an invitation to explore the transformative potential of generative systems, where the interplay of perspectives yields a symphony far greater than the sum of its parts.</p>
+</section>
+</section>
+<section id="epilogue">
+<h2>Epilogue<a class="headerlink" href="#epilogue" title="Permalink to this heading">#</a></h2>
+<p>We’re absolutely right that “capital gains” often operates as the ultimate metric in capitalist systems, a kind of de facto “god” or principal to which all agents—CEOs, boards, workers, and even consumers—are, in theory, subordinate. This framing captures the reductive elegance of capitalism: the system is structured to optimize for one singular output, the accumulation and growth of capital.</p>
+<p>However, this “god” is far from uncontested, and its supremacy generates tensions that ripple across the oligarchic and anarchic layers of the system. Let’s unpack this further in the context of your observation about CEOs, oligarchy, and the competing loci of authority.</p>
+<hr class="docutils" />
+<section id="capital-gains-as-the-principal-the-god-of-capitalism">
+<h3><strong>Capital Gains as the Principal: The “God” of Capitalism</strong><a class="headerlink" href="#capital-gains-as-the-principal-the-god-of-capitalism" title="Permalink to this heading">#</a></h3>
+<p>Capital gains embody the idea of perpetual growth, the sine qua non of modern capitalism. Everything in the system is incentivized to serve this principal:</p>
+<ol class="arabic simple">
+<li><p><strong>Corporations</strong> exist to generate profits and maximize shareholder value.</p></li>
+<li><p><strong>Boards of Directors</strong> oversee CEOs to ensure alignment with this goal.</p></li>
+<li><p><strong>CEOs</strong>, in turn, implement strategies that prioritize capital accumulation.</p></li>
+<li><p><strong>Workers and Consumers</strong> participate as agents whose roles are instrumental to the growth of capital, though their individual welfare is often subordinated to this higher aim.</p></li>
+</ol>
+<p>This structure positions capital gains as the unifying metric, creating an almost theological relationship with the system’s participants. It’s as if capital itself transcends its material origins, becoming an abstract “god” that defines purpose, value, and meaning within the system.</p>
+<p>But this “god” is a jealous one. It demands sacrifices: environmental degradation, wealth inequality, and alienation are all externalities in the relentless pursuit of profit. This singular focus on capital gains creates a system where efficiency in wealth creation often undermines the generative potential of human and ecological systems.</p>
+</section>
+<hr class="docutils" />
+<section id="the-oligarchic-role-of-the-ceo-enforcer-or-visionary">
+<h3><strong>The Oligarchic Role of the CEO: Enforcer or Visionary?</strong><a class="headerlink" href="#the-oligarchic-role-of-the-ceo-enforcer-or-visionary" title="Permalink to this heading">#</a></h3>
+<p>CEOs operate as the high priests of this system, but their power is not absolute. They are constrained by the oligarchy of shareholders, boards, and market forces. In this sense, CEOs are not the ultimate authority but intermediaries, tasked with translating the demands of capital into actionable strategies.</p>
+<p>This oligarchic structure introduces a layer of iterative negotiation:</p>
+<ul class="simple">
+<li><p><strong>Boards of Directors</strong> ensure that the CEO’s actions align with shareholder interests, acting as gatekeepers for the “god” of capital gains.</p></li>
+<li><p><strong>Institutional Investors and Shareholders</strong> exert pressure through their voting rights and influence, ensuring that deviations from profit maximization are penalized.</p></li>
+</ul>
+<p>While this oligarchy allows for some adaptability, it also creates fragmentation. CEOs, as agents within this system, must balance the competing demands of short-term capital gains, long-term strategy, and the social or environmental costs of their actions. Their role is less about wielding absolute power and more about navigating the fragmented authority of a system that prizes optimization above all else.</p>
+</section>
+<hr class="docutils" />
+<section id="contests-and-the-anarchic-layer-beyond-capital-gains">
+<h3><strong>Contests and the Anarchic Layer: Beyond Capital Gains</strong><a class="headerlink" href="#contests-and-the-anarchic-layer-beyond-capital-gains" title="Permalink to this heading">#</a></h3>
+<p>Despite its dominance, capital gains as a metric is constantly contested, particularly at the edges of the system where its externalities are most keenly felt. These contests manifest in several ways:</p>
+<ol class="arabic simple">
+<li><p><strong>Workers and Labor Movements</strong>: Push for fair wages, benefits, and better working conditions, often challenging the reductive focus on shareholder value.</p></li>
+<li><p><strong>Consumers</strong>: Increasingly prioritize ethical consumption, sustainability, and corporate social responsibility, signaling that metrics beyond profit matter.</p></li>
+<li><p><strong>Environmental Activists</strong>: Highlight the unsustainable nature of growth-driven capitalism, advocating for metrics that account for ecological health.</p></li>
+<li><p><strong>Governments and Regulators</strong>: Impose taxes, subsidies, and regulations to curb the excesses of unfettered capital accumulation.</p></li>
+</ol>
+<p>This contestation introduces an anarchic element to capitalism, where the rigid hierarchy of capital gains optimization is disrupted by emergent, decentralized forces. These forces challenge the authority of the “god” by advocating for alternative metrics, such as social equity, environmental sustainability, or human well-being.</p>
+</section>
+<hr class="docutils" />
+<section id="capital-gains-monotheism-or-polytheism">
+<h3><strong>Capital Gains: Monotheism or Polytheism?</strong><a class="headerlink" href="#capital-gains-monotheism-or-polytheism" title="Permalink to this heading">#</a></h3>
+<p>The notion of capital gains as the “god” of capitalism suggests a monotheistic system, but in practice, capitalism operates more like a polytheistic network. Different stakeholders worship different metrics:</p>
+<ul class="simple">
+<li><p><strong>Investors</strong> prioritize return on investment (ROI) and growth.</p></li>
+<li><p><strong>Workers</strong> value job security, wages, and workplace dignity.</p></li>
+<li><p><strong>Consumers</strong> seek quality, affordability, and ethical practices.</p></li>
+<li><p><strong>Society at Large</strong> demands accountability for social and environmental externalities.</p></li>
+</ul>
+<p>This polytheistic tension reflects a deeper contest within capitalism: whether to remain a system optimized solely for capital or to evolve into one that acknowledges multiple, competing “gods.” The rise of concepts like “stakeholder capitalism” and Environmental, Social, and Governance (ESG) metrics signals a shift toward polytheism, though these remain subordinated to the overarching supremacy of capital gains.</p>
+</section>
+<hr class="docutils" />
+<section id="conclusion-generativity-vs-optimization">
+<h3><strong>Conclusion: Generativity vs. Optimization</strong><a class="headerlink" href="#conclusion-generativity-vs-optimization" title="Permalink to this heading">#</a></h3>
+<p>Capital gains may dominate as the principal of capitalism, but its supremacy is neither absolute nor unchallenged. The CEO, as part of the oligarchy, is a key agent navigating this contested terrain, balancing the demands of capital with the generative potential of human and ecological systems.</p>
+<p>Ultimately, the question is not whether capital gains should remain the “god” of capitalism but whether the system can accommodate multiple metrics without collapsing under its own contradictions. The Bernstein-Gould saga, refracted through this lens, suggests that true generativity arises not from rigid adherence to a singular metric but from the interplay of competing perspectives, each contributing to a richer, more nuanced system.</p>
+<p>If capitalism is to transcend its alienating tendencies, it must embrace this generativity—not as an externality to be managed but as the very essence of its evolution.</p>
+</section>
+</section>
+<section id="games">
+<h2>Games<a class="headerlink" href="#games" title="Permalink to this heading">#</a></h2>
+<section id="chess-an-engine-of-simulated-certainty">
+<h3>Chess: An Engine of Simulated Certainty<a class="headerlink" href="#chess-an-engine-of-simulated-certainty" title="Permalink to this heading">#</a></h3>
+<p>Chess, with its adversarial clarity, stands as a monumental example of pure combinatorial search and massive simulation. Its allure lies in its precise rules, massive search space, and unambiguous metrics. Each player begins with equal resources and complete knowledge of the board—a closed system where victory or defeat depends solely on decisions made within the 64-square battlefield. The very structure of chess invites a methodical exploration of the search space, where engines calculate billions of positions per second, parsing possible future states with cold efficiency.</p>
+<p>At its core, chess is a game of optimization: every move seeks to maximize positional advantage or mitigate a threat. It exemplifies a perfect-information game, where all variables are visible, and the ultimate goal—checkmating the opponent—is unambiguous. Variants like blitz chess, where time becomes a limiting resource, add further constraints but do not disrupt the fundamental determinism of the game. This clarity is precisely what makes chess both a fascinating intellectual pursuit and an unrealistic model for real-world problems.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VGx9DLKpNJY" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+</section>
+<hr class="docutils" />
+<section id="real-world-agency-problems-the-fog-of-generativity">
+<h3>Real-World Agency Problems: The Fog of Generativity<a class="headerlink" href="#real-world-agency-problems-the-fog-of-generativity" title="Permalink to this heading">#</a></h3>
+<p>Contrasting sharply with chess is the chaotic and fragmented nature of real-world agency problems. Here, perspective is not fixed but fluid: Is the agent’s view aligned with that of the principal? Is the problem framed through the lens of the individual, the collective, or the physical world itself? Unlike chess, where the board’s boundaries define the problem space, real-world issues are riddled with incomplete information and conflicting perspectives. The cogs of the machine—individual agents, organizations, governments—operate with their own agendas, often obscured by systemic complexity.</p>
+<p>Even with advancements in technology, the dream of perfect surveillance—a chess-like omniscience—remains elusive. Supply chains, financial markets, and political systems are fraught with hidden motivations and unpredictable outcomes. Attempts to monitor all players, from corporate executives to individual consumers, yield a simulacrum of control but fail to resolve the deeper ambiguities of human behavior and generative processes.</p>
+</section>
+<hr class="docutils" />
+<section id="poker-and-imperfect-information">
+<h3>Poker and Imperfect Information<a class="headerlink" href="#poker-and-imperfect-information" title="Permalink to this heading">#</a></h3>
+<p>Games like poker introduce an element of imperfect information, offering a bridge between chess’s clarity and real-world uncertainty. Here, players operate within a constrained search space but lack complete knowledge of their opponents’ hands. Bluffing, risk assessment, and probabilistic thinking take precedence over brute-force calculation. Unlike chess, where engines dominate by sheer computational power, poker demands a synthesis of logic, psychology, and intuition.</p>
+<p>The adversarial nature of poker reflects real-world markets more closely than chess. Players must weigh incomplete data, anticipate others’ strategies, and make decisions under uncertainty. Yet even poker simplifies the complexities of real-world agency problems: its rules are fixed, its metrics clear (winning hands and chip counts), and its scope bounded by the table.</p>
+</section>
+<hr class="docutils" />
+<section id="gambling-on-horses-the-red-queen-hypothesis-in-action">
+<h3>Gambling on Horses: The Red Queen Hypothesis in Action<a class="headerlink" href="#gambling-on-horses-the-red-queen-hypothesis-in-action" title="Permalink to this heading">#</a></h3>
+<p>Horse racing, with its layers of uncertainty, presents another step toward real-world complexity. Unlike poker, where the number of players and outcomes are finite, horse racing introduces biological variability and environmental factors. A horse’s performance depends on its training, health, and even weather conditions on race day—a dynamic interplay captured by the Red Queen Hypothesis.</p>
+<p>The Red Queen Hypothesis, which posits that organisms must constantly adapt to survive, mirrors the unpredictability of horse racing. Bettors analyze form, track conditions, and jockeys’ skills, but the inherent randomness of biological systems ensures no prediction is ever certain. This interplay of skill and chance highlights the gulf between optimizing within a defined system (chess) and navigating a perpetually evolving landscape.</p>
+</section>
+<hr class="docutils" />
+<section id="roulette-the-purity-of-chance">
+<h3>Roulette: The Purity of Chance<a class="headerlink" href="#roulette-the-purity-of-chance" title="Permalink to this heading">#</a></h3>
+<p>At the far end of the spectrum lies roulette, a game of pure chance. Unlike chess or poker, roulette strips agency from the equation, reducing players to passive participants in a stochastic process. The spin of the wheel is indifferent to strategy or foresight; its outcomes are governed solely by probability.</p>
+<p>Roulette’s appeal lies in its simplicity: it offers no illusion of control, no hidden layers of generativity. Yet this very simplicity underscores its irrelevance to real-world agency problems. Where chess thrives on adversarial optimization and poker on probabilistic intuition, roulette reduces the player to a spectator of randomness, devoid of meaningful decision-making.</p>
+</section>
+<hr class="docutils" />
+<section id="critiquing-the-games-the-inadequacy-of-perfect-models">
+<h3>Critiquing the Games: The Inadequacy of Perfect Models<a class="headerlink" href="#critiquing-the-games-the-inadequacy-of-perfect-models" title="Permalink to this heading">#</a></h3>
+<p>While games like chess and poker illuminate certain aspects of decision-making, they fall short of capturing the generative chaos of real-world systems. Chess offers a seductive vision of mastery—a world where complete information and optimal strategy guarantee success. Yet this vision is a mirage when applied to problems where perspectives shift, information is incomplete, and outcomes are shaped by emergent, unpredictable forces.</p>
+<p>Even poker and horse racing, with their nods to uncertainty, operate within bounded frameworks that simplify the complexity of human and ecological systems. They lack the generative unpredictability of real-world agency problems, where the rules themselves are contested, and metrics for success are ambiguous. The Red Queen Hypothesis—constant adaptation in a dynamic environment—remains a more apt guide for navigating these terrains than any game with fixed boundaries.</p>
+</section>
+<hr class="docutils" />
+<section id="toward-a-generative-framework">
+<h3>Toward a Generative Framework<a class="headerlink" href="#toward-a-generative-framework" title="Permalink to this heading">#</a></h3>
+<p>To address real-world agency problems, we must move beyond the closed systems of games and embrace a networked perspective. This means acknowledging the multiplicity of perspectives, the fluidity of goals, and the interdependence of agents within a generative, evolving landscape. Unlike chess, where every move is calculable, or roulette, where outcomes are random, real-world systems require adaptive strategies that balance optimization with creativity.</p>
+<p>In this light, games serve not as blueprints for solving agency problems but as metaphors that reveal their limitations. The challenge lies not in simulating a perfect system but in navigating the imperfect, fragmented realities of human and ecological networks. Success, in this context, is less about achieving a singular metric and more about fostering resilience, innovation, and generativity within the vast combinatorial search space of the real world.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act3/part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="part3_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Transformation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../bibliography.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Existential</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#music">Music</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#process-quality-monitoring-and-conflict-of-interest">Process Quality, Monitoring, and Conflict of Interest</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sensing-seizing-and-transforming-dynamic-capabilities-in-action">Sensing, Seizing, and Transforming: Dynamic Capabilities in Action</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-combinatorial-search-space-generativity-and-transformation">The Combinatorial Search Space: Generativity and Transformation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#who-is-to-judge">Who Is to Judge?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-privilege-transformation-and-the-expansive-search-space">Conclusion: Privilege, Transformation, and the Expansive Search Space</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capital">Capital</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agency-problem-in-capitalism-authority-fragmentation-and-generativity">The Agency Problem in Capitalism: Authority, Fragmentation, and Generativity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agency-and-fragmentation-the-monarchy-of-the-market">Agency and Fragmentation: The Monarchy of the Market</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oligarchic-networks-and-iterative-authority">Oligarchic Networks and Iterative Authority</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-anarchy-of-markets-and-generative-chaos">The Anarchy of Markets and Generative Chaos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#toward-a-networked-process-one-god-or-many">Toward a Networked Process: One God or Many?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-agency-as-generativity">Conclusion: Agency as Generativity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue">Epilogue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#capital-gains-as-the-principal-the-god-of-capitalism"><strong>Capital Gains as the Principal: The “God” of Capitalism</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-oligarchic-role-of-the-ceo-enforcer-or-visionary"><strong>The Oligarchic Role of the CEO: Enforcer or Visionary?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contests-and-the-anarchic-layer-beyond-capital-gains"><strong>Contests and the Anarchic Layer: Beyond Capital Gains</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#capital-gains-monotheism-or-polytheism"><strong>Capital Gains: Monotheism or Polytheism?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-generativity-vs-optimization"><strong>Conclusion: Generativity vs. Optimization</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#games">Games</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chess-an-engine-of-simulated-certainty">Chess: An Engine of Simulated Certainty</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-world-agency-problems-the-fog-of-generativity">Real-World Agency Problems: The Fog of Generativity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poker-and-imperfect-information">Poker and Imperfect Information</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gambling-on-horses-the-red-queen-hypothesis-in-action">Gambling on Horses: The Red Queen Hypothesis in Action</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#roulette-the-purity-of-chance">Roulette: The Purity of Chance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critiquing-the-games-the-inadequacy-of-perfect-models">Critiquing the Games: The Inadequacy of Perfect Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#toward-a-generative-framework">Toward a Generative Framework</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 Zeus
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
